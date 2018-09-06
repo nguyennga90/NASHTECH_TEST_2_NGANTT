@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="TestParamChrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://encodable.com/uploaddemo/" />
+		<parameter name="version" value="2.34" />
+		<classes>
+			<class name="com.encodable.upload.UploadFile" />
+		</classes>
+	</test>
+
+</suite> 
